@@ -115,8 +115,9 @@ body{
     top: 10px;
     left: 10px;
     right: 10px;
-    transition: all 0.4s ease;
+    transition: all 1s ease;
     overflow: hidden;
+
 }
 
 .movie .movie-img img {
