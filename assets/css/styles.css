@@ -10,6 +10,16 @@ body{
     padding-top: 2em;
 }
 
+.top-section h1{
+    background: linear-gradient(to right, rgba(37,37,37,1), rgba(37,37,37,0.1)), linear-gradient(to left, rgba(37,37,37,1), rgba(37,37,37,0.1)), url('/assets/images/bg/top-bg-gif.gif');
+    background-size: cover;
+    padding: 10px;
+    font-weight: bold;
+    /*border-radius: 100px;*/
+    /*-webkit-background-clip: text;*/
+    /*-webkit-text-fill-color: transparent;*/
+}
+
 .top-section, .genre-section{
     /*background-color: #E84545;*/
 }
