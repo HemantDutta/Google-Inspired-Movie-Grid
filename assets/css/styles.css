@@ -11,7 +11,7 @@ body{
 }
 
 .top-section h1{
-    background: linear-gradient(to right, rgba(37,37,37,1), rgba(37,37,37,0.1)), linear-gradient(to left, rgba(37,37,37,1), rgba(37,37,37,0.1)), url('/assets/images/bg/top-bg-gif.gif');
+    background: linear-gradient(to right, rgba(37,37,37,1) 0.1%, rgba(255,255,255,0)), linear-gradient(to left,rgba(37,37,37,1) 0.1%, rgba(255,255,255,0)), url('/assets/images/bg/top-bg-gif.gif');
     background-size: cover;
     padding: 10px;
     font-weight: bold;
