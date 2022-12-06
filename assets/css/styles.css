@@ -33,6 +33,7 @@ body{
     min-height: 5em;
     max-height: max-content;
     border-bottom: 1px solid white;
+    flex-wrap: wrap;
 }
 
 .genre-btn{
@@ -42,6 +43,7 @@ body{
     display: grid;
     place-items: center;
     padding: 10px;
+
 }
 
 .genre-btn button {
@@ -111,6 +113,7 @@ body{
     max-height: 25em;
     border: 1px solid white;
     transition: all 0.4s ease;
+    margin-bottom: 1em;
 
 }
 
