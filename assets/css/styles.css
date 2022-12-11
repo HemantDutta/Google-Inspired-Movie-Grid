@@ -23,6 +23,17 @@ body{
     /*background-color: #E84545;*/
 }
 
+.showAll{
+    background-color: #252525;
+    color: white;
+    border: none;
+    transition: all 0.4s ease;
+}
+
+.showAll:hover{
+    box-shadow: 2px 2px 5px black;
+}
+
 .genre-section{
     padding-bottom: 1em;
 }
@@ -32,8 +43,8 @@ body{
     min-height: 5em;
     max-height: max-content;
     /*border-bottom: 1px solid white;*/
-    flex-wrap: wrap;
     box-shadow: 2px 2px 5px black;
+    flex-wrap: wrap;
 }
 
 .genre-btn{

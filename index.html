@@ -18,19 +18,22 @@
         <h1 class="text-light mb-0">MY FAVORITE ANIME</h1>
     </div>
     <div class="genre-section px-5 mt-4">
-        <div class="genre-head"><h3 class="text-info">Choose Genre</h3></div>
-        <div class="genre-btns d-flex justify-content-around align-items-center">
+        <div class="genre-head d-flex justify-content-between">
+            <h3 class="text-info">Choose Genre</h3>
+            <button class="showAll" onclick="showMovie('all')">Show All</button>
+        </div>
+        <div class="genre-btns d-flex justify-content-around align-items-center mt-2">
             <div class="genre-btn col-lg-3 col-md-3 col-sm-3 hvr-bounce-to-top">
                 <button onclick="showMovie('action')">Action</button>
             </div>
             <div class="genre-btn col-lg-3 col-md-3 col-sm-3 hvr-bounce-to-top">
-                <button>Comedy</button>
+                <button onclick="showMovie('comedy')">Comedy</button>
             </div>
             <div class="genre-btn col-lg-3 col-md-3 col-sm-3 hvr-bounce-to-top">
-                <button>Romance</button>
+                <button onclick="showMovie('romance')">Romance</button>
             </div>
             <div class="genre-btn col-lg-3 col-md-3 col-sm-3 hvr-bounce-to-top">
-                <button>Mystery</button>
+                <button onclick="showMovie('mystery')">Mystery</button>
             </div>
         </div>
     </div>
@@ -52,7 +55,7 @@
                     <h4 class="mb-0 text-light mt-2">Attack On Titan</h4>
                 </div>
             </div>
-            <div class="movie col-lg-3" id="mov2" onmouseover="widen('mov2')" onmouseleave="shorten('mov2')">
+            <div class="movie col-lg-3 mystery" id="mov2" onmouseover="widen('mov2')" onmouseleave="shorten('mov2')">
                 <div class="movie-img" onmouseover="showDes('mov-des2', 'img2')" onmouseleave="removeDes('mov-des2', 'img2')">
                     <img src="assets/images/anime/dn.jpg" alt="" id="img2">
                     <div class="d-none mov-des row align-items-center justify-content-center mt-3" id="mov-des2">
@@ -67,7 +70,7 @@
                     <h4 class="mb-0 text-light mt-2">Death Note</h4>
                 </div>
             </div>
-            <div class="movie col-lg-3 action" id="mov3" onmouseover="widen('mov3')" onmouseleave="shorten('mov3')">
+            <div class="movie col-lg-3 action comedy" id="mov3" onmouseover="widen('mov3')" onmouseleave="shorten('mov3')">
                 <div class="movie-img" onmouseover="showDes('mov-des3', 'img3')" onmouseleave="removeDes('mov-des3', 'img3')">
                     <img src="assets/images/anime/dms.jpg" alt="" id="img3">
                     <div class="d-none mov-des row align-items-center justify-content-center mt-3" id="mov-des3">
@@ -84,7 +87,7 @@
             </div>
         </div>
         <div class="row justify-content-around mt-5">
-            <div class="movie col-lg-3" id="mov4" onmouseover="widen('mov4')" onmouseleave="shorten('mov4')">
+            <div class="movie col-lg-3 comedy romance mystery" id="mov4" onmouseover="widen('mov4')" onmouseleave="shorten('mov4')">
                 <div class="movie-img" onmouseover="showDes('mov-des4', 'img4')" onmouseleave="removeDes('mov-des4', 'img4')">
                     <img src="assets/images/anime/bgs.jpg" alt="" id="img4">
                     <div class="d-none mov-des row align-items-center justify-content-center mt-3" id="mov-des4">
@@ -99,7 +102,7 @@
                     <h4 class="mb-0 text-light mt-2">Bunny Girl Senpai</h4>
                 </div>
             </div>
-            <div class="movie col-lg-3" id="mov5" onmouseover="widen('mov5')" onmouseleave="shorten('mov5')">
+            <div class="movie col-lg-3 comedy romance mystery" id="mov5" onmouseover="widen('mov5')" onmouseleave="shorten('mov5')">
                 <div class="movie-img" onmouseover="showDes('mov-des5', 'img5')" onmouseleave="removeDes('mov-des5', 'img5')">
                     <img src="assets/images/anime/catn.webp" alt="" id="img5">
                     <div class="d-none mov-des row align-items-center justify-content-center mt-3" id="mov-des5">
@@ -114,7 +117,7 @@
                     <h4 class="mb-0 text-light mt-2">Call Of The Night</h4>
                 </div>
             </div>
-            <div class="movie col-lg-3" id="mov6" onmouseover="widen('mov6')" onmouseleave="shorten('mov6')">
+            <div class="movie col-lg-3 comedy romance" id="mov6" onmouseover="widen('mov6')" onmouseleave="shorten('mov6')">
                 <div class="movie-img" onmouseover="showDes('mov-des6', 'img6')" onmouseleave="removeDes('mov-des6', 'img6')">
                     <img src="assets/images/anime/hori.jpg" alt="" id="img6">
                     <div class="d-none mov-des row align-items-center justify-content-center mt-3" id="mov-des6">
@@ -131,7 +134,7 @@
             </div>
         </div>
         <div class="row justify-content-around mt-5">
-            <div class="movie col-lg-3 action" id="mov7" onmouseover="widen('mov7')" onmouseleave="shorten('mov7')">
+            <div class="movie col-lg-3 action comedy" id="mov7" onmouseover="widen('mov7')" onmouseleave="shorten('mov7')">
                 <div class="movie-img" onmouseover="showDes('mov-des7', 'img7')" onmouseleave="removeDes('mov-des7', 'img7')">
                     <img src="assets/images/anime/tr.jpg" alt="" id="img7">
                     <div class="d-none mov-des row align-items-center justify-content-center mt-3" id="mov-des7">
@@ -146,7 +149,7 @@
                     <h4 class="mb-0 text-light mt-2">Tokyo Revengers</h4>
                 </div>
             </div>
-            <div class="movie col-lg-3" id="mov8" onmouseover="widen('mov8')" onmouseleave="shorten('mov8')">
+            <div class="movie col-lg-3 action comedy mystery" id="mov8" onmouseover="widen('mov8')" onmouseleave="shorten('mov8')">
                 <div class="movie-img" onmouseover="showDes('mov-des8', 'img8')" onmouseleave="removeDes('mov-des8', 'img8')">
                     <img src="assets/images/anime/ff.webp" alt="" id="img8">
                     <div class="d-none mov-des row align-items-center justify-content-center mt-3" id="mov-des8">
@@ -161,7 +164,7 @@
                     <h4 class="mb-0 text-light mt-2">Fire Force</h4>
                 </div>
             </div>
-            <div class="movie col-lg-3 action" id="mov9" onmouseover="widen('mov9')" onmouseleave="shorten('mov9')">
+            <div class="movie col-lg-3 action comedy" id="mov9" onmouseover="widen('mov9')" onmouseleave="shorten('mov9')">
                 <div class="movie-img" onmouseover="showDes('mov-des9', 'img9')" onmouseleave="removeDes('mov-des9', 'img9')">
                     <img src="assets/images/anime/jjk.jpg" alt="" id="img9">
                     <div class="d-none mov-des row align-items-center justify-content-center mt-3" id="mov-des9">
@@ -178,7 +181,7 @@
             </div>
         </div>
         <div class="row justify-content-around mt-5">
-            <div class="movie col-lg-3" id="mov10" onmouseover="widen('mov10')" onmouseleave="shorten('mov10')">
+            <div class="movie col-lg-3 comedy romance" id="mov10" onmouseover="widen('mov10')" onmouseleave="shorten('mov10')">
                 <div class="movie-img" onmouseover="showDes('mov-des10', 'img10')" onmouseleave="removeDes('mov-des10', 'img10')">
                     <img src="assets/images/anime/liw.jpg" alt="" id="img10">
                     <div class="d-none mov-des row align-items-center justify-content-center mt-3" id="mov-des10">
@@ -193,7 +196,7 @@
                     <h4 class="mb-0 text-light mt-2">Love Is War</h4>
                 </div>
             </div>
-            <div class="movie col-lg-3" id="mov11" onmouseover="widen('mov11')" onmouseleave="shorten('mov11')">
+            <div class="movie col-lg-3 comedy romance" id="mov11" onmouseover="widen('mov11')" onmouseleave="shorten('mov11')">
                 <div class="movie-img" onmouseover="showDes('mov-des11', 'img11')" onmouseleave="removeDes('mov-des11', 'img11')">
                     <img src="assets/images/anime/komi.jpg" alt="" id="img11">
                     <div class="d-none mov-des row align-items-center justify-content-center mt-3" id="mov-des11">
@@ -208,7 +211,7 @@
                     <h4 class="mb-0 text-light mt-2">Komi San</h4>
                 </div>
             </div>
-            <div class="movie col-lg-3 action" id="mov12" onmouseover="widen('mov12')" onmouseleave="shorten('mov12')">
+            <div class="movie col-lg-3 action comedy" id="mov12" onmouseover="widen('mov12')" onmouseleave="shorten('mov12')">
                 <div class="movie-img" onmouseover="showDes('mov-des12', 'img12')" onmouseleave="removeDes('mov-des12', 'img12')">
                     <img src="assets/images/anime/mha.jpg" alt="" id="img12">
                     <div class="d-none mov-des row align-items-center justify-content-center mt-3" id="mov-des12">
@@ -225,7 +228,7 @@
             </div>
         </div>
         <div class="row justify-content-around mt-5">
-            <div class="movie col-lg-3 action" id="mov13" onmouseover="widen('mov13')" onmouseleave="shorten('mov13')">
+            <div class="movie col-lg-3 action comedy" id="mov13" onmouseover="widen('mov13')" onmouseleave="shorten('mov13')">
                 <div class="movie-img" onmouseover="showDes('mov-des13', 'img13')" onmouseleave="removeDes('mov-des13', 'img13')">
                     <img src="assets/images/anime/naruto.webp" alt="" id="img13">
                     <div class="d-none mov-des row align-items-center justify-content-center mt-3" id="mov-des13">
@@ -240,7 +243,7 @@
                     <h4 class="mb-0 text-light mt-2">Naruto</h4>
                 </div>
             </div>
-            <div class="movie col-lg-3 action" id="mov14" onmouseover="widen('mov14')" onmouseleave="shorten('mov14')">
+            <div class="movie col-lg-3 action comedy" id="mov14" onmouseover="widen('mov14')" onmouseleave="shorten('mov14')">
                 <div class="movie-img" onmouseover="showDes('mov-des14', 'img14')" onmouseleave="removeDes('mov-des14', 'img14')">
                     <img src="assets/images/anime/shippuden.jpg" alt="" id="img14">
                     <div class="d-none mov-des row align-items-center justify-content-center mt-3" id="mov-des14">
@@ -255,7 +258,7 @@
                     <h4 class="mb-0 text-light mt-2">Naruto: Shippuden</h4>
                 </div>
             </div>
-            <div class="movie col-lg-3 action" id="mov15" onmouseover="widen('mov15')" onmouseleave="shorten('mov15')">
+            <div class="movie col-lg-3 action comedy romance" id="mov15" onmouseover="widen('mov15')" onmouseleave="shorten('mov15')">
                 <div class="movie-img" onmouseover="showDes('mov-des15', 'img15')" onmouseleave="removeDes('mov-des15', 'img15')">
                     <img src="assets/images/anime/cm.webp" alt="" id="img15">
                     <div class="d-none mov-des row align-items-center justify-content-center mt-3" id="mov-des15">
@@ -272,7 +275,7 @@
             </div>
         </div>
         <div class="row justify-content-around mt-5">
-            <div class="movie col-lg-3" id="mov16" onmouseover="widen('mov16')" onmouseleave="shorten('mov16')">
+            <div class="movie col-lg-3 comedy romance" id="mov16" onmouseover="widen('mov16')" onmouseleave="shorten('mov16')">
                 <div class="movie-img" onmouseover="showDes('mov-des16', 'img16')" onmouseleave="removeDes('mov-des16', 'img16')">
                     <img src="assets/images/anime/mdd.jpg" alt="" id="img16">
                     <div class="d-none mov-des row align-items-center justify-content-center mt-3" id="mov-des16">
@@ -288,7 +291,7 @@
                 </div>
             </div>
             <div class="movie col-lg-3" id="mov17" onmouseover="widen('mov17')" onmouseleave="shorten('mov17')">
-                <div class="movie-img" onmouseover="showDes('mov-des17', 'img17')" onmouseleave="removeDes('mov-des17', 'img17')">
+                <div class="movie-img comedy romance" onmouseover="showDes('mov-des17', 'img17')" onmouseleave="removeDes('mov-des17', 'img17')">
                     <img src="assets/images/anime/tk.jpg" alt="" id="img17">
                     <div class="d-none mov-des row align-items-center justify-content-center mt-3" id="mov-des17">
                         <div class="btn-title d-flex flex-column col-sm-4">
@@ -303,7 +306,7 @@
                 </div>
             </div>
             <div class="movie col-lg-3" id="mov18" onmouseover="widen('mov18')" onmouseleave="shorten('mov18')">
-                <div class="movie-img" onmouseover="showDes('mov-des18', 'img18')" onmouseleave="removeDes('mov-des18', 'img18')">
+                <div class="movie-img comedy romance" onmouseover="showDes('mov-des18', 'img18')" onmouseleave="removeDes('mov-des18', 'img18')">
                     <img src="assets/images/anime/tqq.webp" alt="" id="img18">
                     <div class="d-none mov-des row align-items-center justify-content-center mt-3" id="mov-des18">
                         <div class="btn-title d-flex flex-column col-sm-4">
@@ -319,7 +322,7 @@
             </div>
         </div>
         <div class="row justify-content-around mt-5">
-            <div class="movie col-lg-3" id="mov19" onmouseover="widen('mov19')" onmouseleave="shorten('mov19')">
+            <div class="movie col-lg-3 action comedy" id="mov19" onmouseover="widen('mov19')" onmouseleave="shorten('mov19')">
                 <div class="movie-img" onmouseover="showDes('mov-des19', 'img19')" onmouseleave="removeDes('mov-des19', 'img19')">
                     <img src="assets/images/anime/opm.jpg" alt="" id="img19">
                     <div class="d-none mov-des row align-items-center justify-content-center mt-3" id="mov-des19">
@@ -334,7 +337,7 @@
                     <h4 class="mb-0 text-light mt-2">One Punch Man</h4>
                 </div>
             </div>
-            <div class="movie col-lg-3" id="mov20" onmouseover="widen('mov20')" onmouseleave="shorten('mov20')">
+            <div class="movie col-lg-3 comedy romance" id="mov20" onmouseover="widen('mov20')" onmouseleave="shorten('mov20')">
                 <div class="movie-img" onmouseover="showDes('mov-des20', 'img20')" onmouseleave="removeDes('mov-des20', 'img20')">
                     <img src="assets/images/anime/saekano.jpg" alt="" id="img20">
                     <div class="d-none mov-des row align-items-center justify-content-center mt-3" id="mov-des20">
@@ -349,7 +352,7 @@
                     <h4 class="mb-0 text-light mt-2">Saekano</h4>
                 </div>
             </div>
-            <div class="movie col-lg-3" id="mov21" onmouseover="widen('mov21')" onmouseleave="shorten('mov21')">
+            <div class="movie col-lg-3 action comedy" id="mov21" onmouseover="widen('mov21')" onmouseleave="shorten('mov21')">
                 <div class="movie-img" onmouseover="showDes('mov-des21', 'img21')" onmouseleave="removeDes('mov-des21', 'img21')">
                     <img src="assets/images/anime/sxf.jpg" alt="" id="img21">
                     <div class="d-none mov-des row align-items-center justify-content-center mt-3" id="mov-des21">
