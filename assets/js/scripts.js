@@ -9,10 +9,10 @@ function shorten(id){
 }
 
 function showDes(id, iid){
-    document.getElementById(`${id}`).classList.remove('d-none');
-    document.getElementById(`${id}`).classList.add('d-flex');
-    document.getElementById(`${iid}`).style.opacity = "50%"
-    document.getElementById(`${iid}`).style.filter = "blur(4px)"
+        document.getElementById(`${id}`).classList.remove('d-none');
+        document.getElementById(`${id}`).classList.add('d-flex');
+        document.getElementById(`${iid}`).style.opacity = "50%"
+        document.getElementById(`${iid}`).style.filter = "blur(4px)"
 }
 
 function removeDes(id, iid){
