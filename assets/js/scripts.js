@@ -21,3 +21,11 @@ function removeDes(id, iid){
     document.getElementById(`${iid}`).style.opacity = "100%"
     document.getElementById(`${iid}`).style.filter = "blur(0px)"
 }
+
+function showMovie(genre){
+        document.querySelectorAll('.movie').forEach(function (x){
+           if(!x.classList.contains(genre)){
+               x.classList.add('d-none');
+           }
+        });
+}

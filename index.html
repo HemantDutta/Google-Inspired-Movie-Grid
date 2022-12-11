@@ -21,23 +21,23 @@
         <div class="genre-head"><h3 class="text-info">Choose Genre</h3></div>
         <div class="genre-btns d-flex justify-content-around align-items-center">
             <div class="genre-btn col-lg-3 col-md-3 col-sm-3 hvr-bounce-to-top">
-                <button>Explosions and Guns</button>
+                <button onclick="showMovie('action')">Action</button>
             </div>
             <div class="genre-btn col-lg-3 col-md-3 col-sm-3 hvr-bounce-to-top">
-                <button>Explosions and Guns</button>
+                <button>Comedy</button>
             </div>
             <div class="genre-btn col-lg-3 col-md-3 col-sm-3 hvr-bounce-to-top">
-                <button>Explosions and Guns</button>
+                <button>Romance</button>
             </div>
             <div class="genre-btn col-lg-3 col-md-3 col-sm-3 hvr-bounce-to-top">
-                <button>Explosions and Guns</button>
+                <button>Mystery</button>
             </div>
         </div>
     </div>
 
     <div class="movie-section">
         <div class="row justify-content-around">
-            <div class="movie col-lg-3" id="mov1" onmouseover="widen('mov1')" onmouseleave="shorten('mov1')">
+            <div class="movie col-lg-3 action" id="mov1" onmouseover="widen('mov1')" onmouseleave="shorten('mov1')">
                 <div class="movie-img" onmouseover="showDes('mov-des1', 'img1')" onmouseleave="removeDes('mov-des1', 'img1')">
                     <img src="assets/images/anime/aot.jpg" alt="" id="img1">
                     <div class="d-none mov-des row align-items-center justify-content-center mt-3" id="mov-des1">
@@ -67,7 +67,7 @@
                     <h4 class="mb-0 text-light mt-2">Death Note</h4>
                 </div>
             </div>
-            <div class="movie col-lg-3" id="mov3" onmouseover="widen('mov3')" onmouseleave="shorten('mov3')">
+            <div class="movie col-lg-3 action" id="mov3" onmouseover="widen('mov3')" onmouseleave="shorten('mov3')">
                 <div class="movie-img" onmouseover="showDes('mov-des3', 'img3')" onmouseleave="removeDes('mov-des3', 'img3')">
                     <img src="assets/images/anime/dms.jpg" alt="" id="img3">
                     <div class="d-none mov-des row align-items-center justify-content-center mt-3" id="mov-des3">
@@ -131,7 +131,7 @@
             </div>
         </div>
         <div class="row justify-content-around mt-5">
-            <div class="movie col-lg-3" id="mov7" onmouseover="widen('mov7')" onmouseleave="shorten('mov7')">
+            <div class="movie col-lg-3 action" id="mov7" onmouseover="widen('mov7')" onmouseleave="shorten('mov7')">
                 <div class="movie-img" onmouseover="showDes('mov-des7', 'img7')" onmouseleave="removeDes('mov-des7', 'img7')">
                     <img src="assets/images/anime/tr.jpg" alt="" id="img7">
                     <div class="d-none mov-des row align-items-center justify-content-center mt-3" id="mov-des7">
@@ -161,7 +161,7 @@
                     <h4 class="mb-0 text-light mt-2">Fire Force</h4>
                 </div>
             </div>
-            <div class="movie col-lg-3" id="mov9" onmouseover="widen('mov9')" onmouseleave="shorten('mov9')">
+            <div class="movie col-lg-3 action" id="mov9" onmouseover="widen('mov9')" onmouseleave="shorten('mov9')">
                 <div class="movie-img" onmouseover="showDes('mov-des9', 'img9')" onmouseleave="removeDes('mov-des9', 'img9')">
                     <img src="assets/images/anime/jjk.jpg" alt="" id="img9">
                     <div class="d-none mov-des row align-items-center justify-content-center mt-3" id="mov-des9">
@@ -208,7 +208,7 @@
                     <h4 class="mb-0 text-light mt-2">Komi San</h4>
                 </div>
             </div>
-            <div class="movie col-lg-3" id="mov12" onmouseover="widen('mov12')" onmouseleave="shorten('mov12')">
+            <div class="movie col-lg-3 action" id="mov12" onmouseover="widen('mov12')" onmouseleave="shorten('mov12')">
                 <div class="movie-img" onmouseover="showDes('mov-des12', 'img12')" onmouseleave="removeDes('mov-des12', 'img12')">
                     <img src="assets/images/anime/mha.jpg" alt="" id="img12">
                     <div class="d-none mov-des row align-items-center justify-content-center mt-3" id="mov-des12">
@@ -225,7 +225,7 @@
             </div>
         </div>
         <div class="row justify-content-around mt-5">
-            <div class="movie col-lg-3" id="mov13" onmouseover="widen('mov13')" onmouseleave="shorten('mov13')">
+            <div class="movie col-lg-3 action" id="mov13" onmouseover="widen('mov13')" onmouseleave="shorten('mov13')">
                 <div class="movie-img" onmouseover="showDes('mov-des13', 'img13')" onmouseleave="removeDes('mov-des13', 'img13')">
                     <img src="assets/images/anime/naruto.webp" alt="" id="img13">
                     <div class="d-none mov-des row align-items-center justify-content-center mt-3" id="mov-des13">
@@ -240,7 +240,7 @@
                     <h4 class="mb-0 text-light mt-2">Naruto</h4>
                 </div>
             </div>
-            <div class="movie col-lg-3" id="mov14" onmouseover="widen('mov14')" onmouseleave="shorten('mov14')">
+            <div class="movie col-lg-3 action" id="mov14" onmouseover="widen('mov14')" onmouseleave="shorten('mov14')">
                 <div class="movie-img" onmouseover="showDes('mov-des14', 'img14')" onmouseleave="removeDes('mov-des14', 'img14')">
                     <img src="assets/images/anime/shippuden.jpg" alt="" id="img14">
                     <div class="d-none mov-des row align-items-center justify-content-center mt-3" id="mov-des14">
@@ -255,7 +255,7 @@
                     <h4 class="mb-0 text-light mt-2">Naruto: Shippuden</h4>
                 </div>
             </div>
-            <div class="movie col-lg-3" id="mov15" onmouseover="widen('mov15')" onmouseleave="shorten('mov15')">
+            <div class="movie col-lg-3 action" id="mov15" onmouseover="widen('mov15')" onmouseleave="shorten('mov15')">
                 <div class="movie-img" onmouseover="showDes('mov-des15', 'img15')" onmouseleave="removeDes('mov-des15', 'img15')">
                     <img src="assets/images/anime/cm.webp" alt="" id="img15">
                     <div class="d-none mov-des row align-items-center justify-content-center mt-3" id="mov-des15">
