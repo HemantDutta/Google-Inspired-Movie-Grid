@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-width=1.0">
     <title>My Favorite Anime | Google Inspired</title>
     <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/css/styles.css">
     <style>
         .top-section h1{
@@ -12,12 +13,12 @@
         }
     </style>
 </head>
-<body>
+<body onload="onLoadAnim()">
 <div class="container main-cont">
-    <div class="top-section text-center">
+    <div class="top-section text-center" id="topBar">
         <h1 class="text-light mb-0">MY FAVORITE ANIME</h1>
     </div>
-    <div class="genre-section px-5 mt-4">
+    <div class="genre-section px-5 mt-4" id="genre">
         <div class="genre-head d-flex justify-content-between">
             <h3 class="text-info">Choose Genre</h3>
             <button class="showAll" onclick="showMovie('all')">Show All</button>
@@ -38,7 +39,7 @@
         </div>
     </div>
 
-    <div class="movie-section">
+    <div class="movie-section" id="anime">
         <div class="row justify-content-around">
             <div class="movie col-lg-3 action" id="mov1" onmouseover="widen('mov1')" onmouseleave="shorten('mov1')">
                 <div class="movie-img" onmouseover="showDes('mov-des1', 'img1')" onmouseleave="removeDes('mov-des1', 'img1')">
@@ -369,6 +370,10 @@
             </div>
         </div>
     </div>
+</div>
+<div class="me text-center" id="footer">
+    <span>Developed By: Hemant Dutta</span>
+    <span><a href="https://github.com/HemantDutta/Google-Inspired-Movie-Grid" target="_blank"><i class="fa-brands fa-github"></i></a></span>
 </div>
 <!--Scripts-->
 <script src="assets/js/jquery-3.6.0.js"></script>

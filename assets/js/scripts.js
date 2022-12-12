@@ -1,3 +1,21 @@
+function onLoadAnim(){
+    let footer = document.getElementById('footer');
+    footer.style.transform = "translateY(0%)";
+    footer.style.opacity = "100";
+
+    let topBar = document.getElementById('topBar');
+    topBar.style.transform = "translateY(0%)";
+    topBar.style.opacity = "100";
+
+    let genre = document.getElementById('genre');
+    genre.style.transform = "translateY(0%)";
+    genre.style.opacity = "100";
+
+    let anime = document.getElementById('anime');
+    anime.style.transform = "translateY(0%)";
+    anime.style.opacity = "100";
+}
+
 function widen(id) {
     document.getElementById(`${id}`).classList.remove('col-lg-3');
     document.getElementById(`${id}`).classList.add('col-lg-6');
