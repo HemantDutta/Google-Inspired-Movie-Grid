@@ -3,7 +3,7 @@ body{
 }
 
 .main-cont {
-    width: 90vw;
+    width: 100vw;
 }
 
 .top-section{
@@ -202,11 +202,17 @@ body{
     color: white;
 }
 
-/*Media query for Anime Description*/
+/*Media queries*/
 
 @media (max-width: 1057px) {
     .btn-title h4, .mov-des p{
         display: none;
+    }
+}
+
+@media (max-width: 569px) {
+    .genre-btn{
+        width: 50%;
     }
 }
 
