@@ -72,7 +72,7 @@ body{
     height: 5em;
     display: grid;
     place-items: center;
-    padding: 10px;
+    /*padding: 10px;*/
 
 }
 
@@ -82,6 +82,8 @@ body{
     border: none;
     font-weight: bold;
     font-size: 0.8em;
+    height: 100%;
+    width: 100%;
 }
 
 /* Bounce To Top */
@@ -198,6 +200,14 @@ body{
 .me span:hover, .me span a:hover{
     transform: scale(1.1);
     color: white;
+}
+
+/*Media query for Anime Description*/
+
+@media (max-width: 1057px) {
+    .btn-title h4, .mov-des p{
+        display: none;
+    }
 }
 
 
